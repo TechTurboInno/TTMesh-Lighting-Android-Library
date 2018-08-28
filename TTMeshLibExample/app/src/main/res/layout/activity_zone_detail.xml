@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/zoneDetailConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/g_darkblack"
+    tools:context="com.techturbo.bluetooth.light.activity.ZoneDetailActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/header_height"
+        android:background="@color/g_darkblack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/img_header_menu_left"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/back"
+            android:text="@string/device_list_menu_left"
+            android:textColor="@android:color/white"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/txt_header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Group"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout3"
+        app:layout_constraintVertical_bias="0.0">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="1000dp">
+
+            <Button
+                android:id="@+id/deleteButton"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginBottom="60dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/corners_button_red"
+                android:text="Delete"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/timeET2"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/corners_bg"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@+id/textView8"
+                app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:text="Name"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/nameET"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/corners_bg"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView14"
+                app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Timing Sequence"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="@+id/nameET"
+                app:layout_constraintTop_toBottomOf="@+id/nameET" />
+
+            <EditText
+                android:id="@+id/timeET"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/corners_bg"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="@+id/textView16"
+                app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/smallarrow"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="@+id/nameET"
+                app:layout_constraintTop_toTopOf="@+id/nameET" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:text="Brightness"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/timeET" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="0dp"
+                android:layout_height="6dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/brightness_seekbar_bg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+            <SeekBar
+                android:id="@+id/sb_brightness"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:max="100"
+                android:padding="5dp"
+                android:progress="1"
+                android:progressDrawable="@drawable/po_seekbar"
+                android:thumb="@drawable/thumb"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="15dp"
+                android:text="Temperature"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sb_brightness" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="0dp"
+                android:layout_height="6dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/colortempature_seekbar_bg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+            <SeekBar
+                android:id="@+id/sb_brightness4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:max="100"
+                android:padding="5dp"
+                android:progress="1"
+                android:progressDrawable="@drawable/po_seekbar"
+                android:thumb="@drawable/thumb"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="15dp"
+                android:text="Color"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sb_brightness4" />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/color_seekbar_bg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+            <SeekBar
+                android:id="@+id/sb_brightness5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:max="100"
+                android:padding="5dp"
+                android:progress="1"
+                android:progressDrawable="@drawable/po_seekbar"
+                android:thumb="@drawable/thumb"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="15dp"
+                android:text="Pattern"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sb_brightness5" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraintLayout2"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView10">
+
+                <ImageView
+                    android:id="@+id/imageView_9"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView_10"
+                    app:layout_constraintStart_toEndOf="@+id/imageView_8"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView_4" />
+
+                <ImageView
+                    android:id="@+id/imageView_7"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView_8"
+                    app:layout_constraintStart_toEndOf="@+id/imageView_6"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView_2" />
+
+                <ImageView
+                    android:id="@+id/imageView_10"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView_5" />
+
+                <ImageView
+                    android:id="@+id/imageView_8"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView_3" />
+
+                <ImageView
+                    android:id="@+id/imageView_6"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView_1" />
+
+                <ImageView
+                    android:id="@+id/imageView_4"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView_5"
+                    app:layout_constraintStart_toEndOf="@+id/imageView_3"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView_3"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView_2"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView_3"
+                    app:layout_constraintStart_toEndOf="@+id/imageView_1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView_5"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView_1"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginBottom="60dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/corners_button_red"
+                android:text="SAVE"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="48dp"
+                android:text="To"
+                android:textColor="@color/white"
+                android:textSize="19sp"
+                app:layout_constraintStart_toEndOf="@+id/timeET"
+                app:layout_constraintTop_toBottomOf="@+id/nameET" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

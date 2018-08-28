@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="android:Theme.Light.NoTitleBar"/>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="actionSheetStyle">@style/ActionSheetStyleiOS7</item>
+    </style>
+
+    <!--自定义dialog背景全透明无边框theme -->
+    <style name="MyDialog" parent="android:Theme.Light.NoTitleBar">
+        <!--背景颜色及和透明程度-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--是否去除标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否去除边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否模糊-->
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="ActionSheetStyleiOS7">
+        <item name="actionSheetBackground">@android:color/transparent</item>
+        <item name="cancelButtonBackground">@drawable/slt_as_ios7_cancel_bt</item>
+        <item name="otherButtonTopBackground">@drawable/slt_as_ios7_other_bt_top</item>
+        <item name="otherButtonMiddleBackground">@drawable/slt_as_ios7_other_bt_middle</item>
+        <item name="otherButtonBottomBackground">@drawable/slt_as_ios7_other_bt_bottom</item>
+        <item name="otherButtonSingleBackground">@drawable/slt_as_ios7_other_bt_single</item>
+        <item name="cancelButtonTextColor">#1E82FF</item>
+        <item name="otherButtonTextColor">#1E82FF</item>
+        <item name="actionSheetPadding">10dp</item>
+        <item name="otherButtonSpacing">0dp</item>
+        <item name="cancelButtonMarginTop">10dp</item>
+        <item name="actionSheetTextSize">12sp</item>
+    </style>
+
+</resources>
